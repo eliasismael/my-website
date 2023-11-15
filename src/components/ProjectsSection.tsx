@@ -47,7 +47,7 @@ const ProjectsSection = () => {
 
         <ProjectCard
           image={imgFindYourLoveApp}
-          title="Mach maker app"
+          title="Match maker app"
           technologies={[
             "HTML",
             "CSS",
@@ -96,7 +96,7 @@ const ProjectsSection = () => {
 
         <ProjectCard
           image={imgRockPaperSccisors}
-          title="Rock paper sccisors"
+          title="Rock paper scissors"
           technologies={["HTML", "CSS", "JavsScript"]}
           date="jun-23 dec-23"
           info={`Video game based on the game of rock, paper, scissors. It includes the registration of users and their victories and the possibility of
