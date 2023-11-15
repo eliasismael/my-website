@@ -23,7 +23,7 @@ const Presentation = () => {
       {/* NAME */}
       <div className="flex flex-col items-center justify-center mt-8 text-white ">
         <h1 className="text-4xl mb-2 text-center">Hi, I am Elías Pereyra</h1>
-        <h2 className="text-3xl text-center">
+        <h2 className="text-3xl text-center" style={{ lineHeight: "1.5" }}>
           <strong className="text-blue-900 bg-blue-950/40 px-2 rounded-md">
             Frontend
           </strong>{" "}
@@ -50,7 +50,7 @@ const Presentation = () => {
 
       {/* DESCRIPTION */}
       <div
-        className="py-4 px-8 text-center text-lg text-gray-300 mt-4 
+        className="py-4 px-8  text-lg text-gray-300 mt-4 
         rounded-md
         tracking-wide
         bg-violet-950/10 
@@ -58,7 +58,7 @@ const Presentation = () => {
         shadow-violet-950/10"
         style={{ textShadow: "4px 4px 10px rgb(0,0,0,0.3)" }}
       >
-        <p className="text-2xl">
+        <p className="text-xl text-center tracking-wider">
           I bring expertise in the development of diverse web-based
           applications, encompassing:
         </p>

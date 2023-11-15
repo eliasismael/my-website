@@ -24,7 +24,7 @@ const HeaderButton: React.FC<HeaderButtonProps> = (props) => {
       duration={500}
       offset={-100}
       // spy
-      className={`cursor-pointer border-2 border-gray-400 sm:border-0 text-center
+      className={`cursor-pointer border-2 border-gray-400 md:border-0 text-center
        hover:border-white text-gray-200 font-normal
      
        duration-500 hover:text-white

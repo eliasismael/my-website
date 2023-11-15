@@ -102,12 +102,6 @@ export const FRONTEND_TECHNOLOGIES: Technologie[] = [
     alt: "Next Logo",
     color: "white",
   },
-  {
-    name: "Node.js",
-    src: node,
-    alt: "Node Logo",
-    color: "#55A54B",
-  },
 ];
 
 export const BLOCKCHAIN_TECHNOLOGIES: Technologie[] = [
@@ -156,10 +150,17 @@ export const OTHER_TECHNOLOGIES: Technologie[] = [
     alt: "GitHub Logo",
     color: "white",
   },
+
   {
     name: "VSC",
     src: vsc,
     alt: "Visual Studio Code Logo",
     color: "#2674D1",
+  },
+  {
+    name: "Node.js",
+    src: node,
+    alt: "Node Logo",
+    color: "#55A54B",
   },
 ];

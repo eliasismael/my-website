@@ -12,7 +12,7 @@ const Header: React.FC<HeaderProps> = () => {
 
   return (
     <div
-      className="w-screen 
+      className="w-full 
        sticky h-20 top-0 z-50 
       bg-gradient-to-r from-black/95 to-black/95
     flex justify-end sm:gap-8 sm:pr-8 items-center

@@ -30,11 +30,10 @@ const Contact = () => {
     setName("");
     setEmail("");
     setMessage("");
-    console.log("se cambio el estado");
   };
 
   return (
-    <div id="contact" className="w-full py-8 mb-4 text-white">
+    <div id="contact" className="w-full py-8 mb-10 text-white">
       <h3 className="text-4xl text-center font-extrabold tracking-wide mb-8">
         Contact
       </h3>
