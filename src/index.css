@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+.layout {
+  min-height: 100vh;
+  /* background-color: rgb(0, 0, 0); */
+  /* background-image: radial-gradient(circle at 5% 20%,
+      rgb(15, 32, 65) 0,
+      transparent 70%), radial-gradient(circle at 5% 20%,
+      rgb(28, 27, 97) 0,
+      transparent 30%), radial-gradient(circle at 90% 80%,
+      rgb(18, 18, 34) 0,
+      transparent 50%); */
+  /* background-image: url("../src/assets/img/background/network-nodes-connected-background-footage-089996011_prevstill.webp"); */
+  background-size: contain;
+  background-repeat: repeat;
+}
+
+
+
+.footer_icon {
+  width: 1.5rem !important;
+  height: 1.5rem !important;
+  color: white
+}
+
+.menu_logo {
+  color: blueviolet;
+  height: 3rem !important;
+  width: 3rem !important;
+  text-align: end !important;
+  margin: 20px;
+  cursor: pointer;
+  transition-duration: 300ms;
+}
+
+.menu_logo:hover {
+  color: white;
+}
+
+/* VIDEO */
+
+.video-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  z-index: -10;
+}
+
+.video-container video {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  z-index: -10;
+  opacity: 0.3;
+}
