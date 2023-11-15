@@ -1,7 +1,6 @@
 import useWindowWidth from "../hooks/useWindowWidth";
 
 import { Button } from "react-scroll";
-import { useRef } from "react";
 
 interface HeaderButtonProps {
   text: string;
@@ -13,8 +12,6 @@ interface HeaderButtonProps {
 const HeaderButton: React.FC<HeaderButtonProps> = (props) => {
   const { windowWidth } = useWindowWidth();
   const { text, sectionToScroll, onClick: hideMenu } = props;
-
-  const linkRef = useRef<any>(null);
 
   const handleClick = () => {
     if (typeof hideMenu === "function") hideMenu();

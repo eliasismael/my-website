@@ -9,7 +9,7 @@ interface ProjectCardProps {
 }
 
 const ProjectCard: React.FC<ProjectCardProps> = (props) => {
-  const { title, technologies, date, info, image, deploy } = props;
+  const { title, technologies, info, image, deploy } = props;
   return (
     <div
       className="w-full bg-gray-800 rounded-2xl shadow-md shadow-gray-900
