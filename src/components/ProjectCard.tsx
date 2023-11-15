@@ -25,7 +25,7 @@ const ProjectCard: React.FC<ProjectCardProps> = (props) => {
         <a href={deploy} target="_blank">
           <img
             src={image}
-            className=" w-full h-40 object-cover rounded-t-2xl"
+            className=" w-full h-52 object-cover rounded-t-2xl"
           />
         </a>
       </div>
