@@ -1,4 +1,4 @@
-interface ProjectCardProps {
+interface CardProps {
   image: string;
   title: string;
   technologies: string[];
@@ -8,18 +8,10 @@ interface ProjectCardProps {
   code: string;
 }
 
-const ProjectCard: React.FC<ProjectCardProps> = (props) => {
+const Card: React.FC<CardProps> = (props) => {
   const { title, technologies, info, image, deploy } = props;
   return (
-    <div
-      className="w-full bg-gray-800 rounded-2xl shadow-md shadow-gray-900
-    duration-500
-    hover:shadow-xl
-    hover:shadow-gray-950
-    hover:-translate-y-2
-    md:w-[45%]
-    "
-    >
+    <div className="w-full bg-gray-800 rounded-2xl shadow-md shadow-gray-900 duration-500 hover:shadow-xl hover:shadow-gray-950 hover:-translate-y-2 md:w-[45%]">
       {/* IMAGE */}
       <div className="w-full rounded-2xl">
         <a href={deploy} target="_blank">
@@ -56,4 +48,4 @@ const ProjectCard: React.FC<ProjectCardProps> = (props) => {
   );
 };
 
-export default ProjectCard;
+export default Card;

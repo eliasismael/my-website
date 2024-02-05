@@ -21,16 +21,15 @@ const Contact = () => {
       .then(
         (result) => {
           console.log(result.text);
+          setIsMessageSent(true);
+          setName("");
+          setEmail("");
+          setMessage("");
         },
         (error) => {
           console.log(error.text);
         }
       );
-
-    setIsMessageSent(true);
-    setName("");
-    setEmail("");
-    setMessage("");
   };
 
   return (
@@ -45,50 +44,14 @@ const Contact = () => {
           onSubmit={(e) => sendEmail(e)}
           className="w-full max-w-lg"
         >
-          {/* <div className="mb-4">
-            <label htmlFor="name" className="block text-lg mb-2">
-              Name
-            </label>
-
-            <input
-              className="w-full p-2 border-2 text-gray-500 border-gray-300 rounded focus:outline-none focus:border-green-900
-              shadow-md shadow-gray-950
-              "
-              id="name"
-              type="text"
-              placeholder="Your Name"
-              name="user_name"
-              value={name}
-              onChange={(evt) => setName(evt.target.value)}
-              required
-            />
-          </div> */}
-
           <Input
             id="name"
             type="text"
             placeholder="Your Name"
             name="user_name"
-            value={email}
+            value={name}
             onChange={(evt) => setName(evt.target.value)}
           />
-
-          {/* <div className="mb-4"> */}
-          {/* <label htmlFor="email" className="block text-lg  mb-2">
-              Email
-            </label> */}
-
-          {/* 
-            <input
-              className="w-full p-2 border-2 text-gray-500 border-gray-300 rounded focus:outline-none focus:border-green-900"
-              id="email"
-              type="email"
-              placeholder="Your Email"
-              value={email}
-              onChange={(evt) => setEmail(evt.target.value)}
-              name="user_email"
-              required
-            /> */}
 
           <Input
             id="email"
@@ -98,7 +61,6 @@ const Contact = () => {
             onChange={(evt) => setEmail(evt.target.value)}
             name="user_email"
           />
-          {/* </div> */}
 
           <div className="mb-4">
             <label htmlFor="message" className="block text-lg  mb-2">
@@ -119,8 +81,7 @@ const Contact = () => {
 
           {!isMessageSent && (
             <button
-              className="bg-gray-800 w-full text-white font-semibold py-2 px-4 rounded-lg
-            hover:bg-gray-900 duration-300"
+              className="bg-gray-800 w-full text-white font-semibold py-2 px-4 rounded-lg hover:bg-gray-900 duration-300"
               type="submit"
             >
               Send

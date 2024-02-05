@@ -1,4 +1,4 @@
-import useWindowWidth from "../hooks/useWindowWidth";
+import useWindowWidth from "../../../hooks/useWindowWidth";
 
 import { Button } from "react-scroll";
 
@@ -23,11 +23,7 @@ const HeaderButton: React.FC<HeaderButtonProps> = (props) => {
       smooth
       duration={500}
       offset={-100}
-      // spy
-      className={`cursor-pointer border-2 border-gray-400 md:border-0 text-center
-       hover:border-white text-gray-200 font-normal
-     
-       duration-500 hover:text-white
+      className={`cursor-pointer border-2 border-gray-400 md:border-0 text-center hover:border-white text-gray-200 font-normal duration-500 hover:text-white
        ${windowWidth && windowWidth < 768 && "w-11/12 py-2 rounded-xl"}`}
       onClick={handleClick}
     >

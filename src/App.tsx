@@ -1,10 +1,11 @@
 import Footer from "./components/Footer";
-import Header from "./components/Header";
 import Layout from "./components/Layout";
 import Presentation from "./components/Presentation";
-import ProjectsSection from "./components/ProjectsSection";
-import SkillsSection from "./components/SkillsSection";
 import Contact from "./components/Contact";
+import Header from "./components/Header/Header";
+import { Experience } from "./components/Experience/Experience";
+import { Projects } from "./components/Projects/Projects";
+import { Skills } from "./components/Skills/Skills";
 
 function App() {
   return (
@@ -12,8 +13,9 @@ function App() {
       <Header />
       <Layout>
         <Presentation />
-        <ProjectsSection />
-        <SkillsSection />
+        <Experience />
+        <Projects />
+        <Skills />
         <Contact />
       </Layout>
       <Footer />

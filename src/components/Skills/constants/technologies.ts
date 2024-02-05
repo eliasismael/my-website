@@ -1,26 +1,26 @@
-import html from "../assets/img/technologies_logos/HTML5_logo_and_wordmark.svg.png";
-import css from "../assets/img/technologies_logos/CSS3_logo_and_wordmark.svg.png";
-import javascript from "../assets/img/technologies_logos/JavaScript-logo.png";
-import typescript from "../assets/img/technologies_logos/Typescript_logo_2020.svg.png";
-import tailwind from "../assets/img/technologies_logos/tailwind-css-logo-5AD4175897-seeklogo.com.png";
-import mui from "../assets/img/technologies_logos/mui.png";
-import react from "../assets/img/technologies_logos/react.png";
-import vite from "../assets/img/technologies_logos/Vitejs-logo.svg.png";
-import next from "../assets/img/technologies_logos/next.webp";
-import node from "../assets/img/technologies_logos/2560px-Node.js_logo.svg.png";
-import redux from "../assets/img/technologies_logos/redux.svg";
-import reactRouter from "../assets/img/technologies_logos/react-router.png";
-import reactQuery from "../assets/img/technologies_logos/react-query.png";
+import html from "../../../assets/img/technologies_logos/HTML5_logo_and_wordmark.svg.png";
+import css from "../../../assets/img/technologies_logos/CSS3_logo_and_wordmark.svg.png";
+import javascript from "../../../assets/img/technologies_logos/JavaScript-logo.png";
+import typescript from "../../../assets/img/technologies_logos/Typescript_logo_2020.svg.png";
+import tailwind from "../../../assets/img/technologies_logos/tailwind-css-logo-5AD4175897-seeklogo.com.png";
+import mui from "../../../assets/img/technologies_logos/mui.png";
+import react from "../../../assets/img/technologies_logos/react.png";
+import vite from "../../../assets/img/technologies_logos/Vitejs-logo.svg.png";
+import next from "../../../assets/img/technologies_logos/next.webp";
+import node from "../../../assets/img/technologies_logos/2560px-Node.js_logo.svg.png";
+import redux from "../../../assets/img/technologies_logos/redux.svg";
+import reactRouter from "../../../assets/img/technologies_logos/react-router.png";
+import reactQuery from "../../../assets/img/technologies_logos/react-query.png";
 
-import solidity from "../assets/img/technologies_logos/solidity-logo.svg";
-import hardhat from "../assets/img/technologies_logos/hardhat.png";
-import foundry from "../assets/img/technologies_logos/foundry.png";
-import ethers from "../assets/img/technologies_logos/ethers.png";
-import web3 from "../assets/img/technologies_logos/web3js.png";
+import solidity from "../../../assets/img/technologies_logos/solidity-logo.svg";
+import hardhat from "../../../assets/img/technologies_logos/hardhat.png";
+import foundry from "../../../assets/img/technologies_logos/foundry.png";
+import ethers from "../../../assets/img/technologies_logos/ethers.png";
+import web3 from "../../../assets/img/technologies_logos/web3js.png";
 
-import git from "../assets/img/technologies_logos/git-logo.png";
-import github from "../assets/img/technologies_logos/github-icon.png";
-import vsc from "../assets/img/technologies_logos/vsc.png";
+import git from "../../../assets/img/technologies_logos/git-logo.png";
+import github from "../../../assets/img/technologies_logos/github-icon.png";
+import vsc from "../../../assets/img/technologies_logos/vsc.png";
 
 export interface Technologie {
   name: string;

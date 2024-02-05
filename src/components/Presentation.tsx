@@ -59,8 +59,10 @@ const Presentation = () => {
         style={{ textShadow: "4px 4px 10px rgb(0,0,0,0.3)" }}
       >
         <p className="text-xl text-center tracking-wider">
-          I bring expertise in the development of diverse web-based
-          applications, encompassing:
+          Passionate about innovation and technology, I am self-taught developer
+          with a focused approach to building quality software with an emphasis
+          on scalability, accessibility and user experience. I bring expertise
+          in the development of diverse web-based applications, encompassing:
         </p>
 
         <ul className="list-none mt-4 text-start">
@@ -99,7 +101,7 @@ const Presentation = () => {
         >
           {" "}
           <a
-            href="https://drive.google.com/file/d/1r5JniJCr0jjyF9X636GTx2UqWx0C2Ofc/view?usp=sharing"
+            href="https://drive.google.com/file/d/1nNX-nuo4pusEUTR3VKxvPSGo6kdOSZcB/view?usp=sharing"
             target="_blank"
           >
             Check resume

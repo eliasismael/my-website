@@ -1,12 +1,12 @@
-import SkillCard from "./SkillCard";
+import { Card } from "./components/Card";
 
 import {
   FRONTEND_TECHNOLOGIES,
   BLOCKCHAIN_TECHNOLOGIES,
   OTHER_TECHNOLOGIES,
-} from "../constants/technologies";
+} from "./constants/technologies";
 
-const SkillsSection = () => {
+export const Skills = () => {
   return (
     <section
       id="skills"
@@ -18,26 +18,20 @@ const SkillsSection = () => {
       </div>
 
       {/* CARDS */}
-      <div
-        className="w-full flex flex-col py-10 gap-6
-      
-      "
-      >
+      <div className="w-full flex flex-col py-10 gap-6">
         <div className="w-full h-20 flex justify-center items-center text-center text-2xl">
           <p className="font-bold text-3xl tracking-wider">Frontend</p>
         </div>
-        <SkillCard title="Frontend" technologies={FRONTEND_TECHNOLOGIES} />
+        <Card title="Frontend" technologies={FRONTEND_TECHNOLOGIES} />
         <div className="w-full h-20 flex justify-center items-center text-center text-2xl">
           <p className="font-bold text-3xl tracking-wider">Blockchain</p>
         </div>
-        <SkillCard title="Blockchain" technologies={BLOCKCHAIN_TECHNOLOGIES} />
+        <Card title="Blockchain" technologies={BLOCKCHAIN_TECHNOLOGIES} />
         <div className="w-full h-20 flex justify-center items-center text-center text-2xl">
           <p className="font-bold text-3xl tracking-wider">Others</p>
         </div>
-        <SkillCard title="Others" technologies={OTHER_TECHNOLOGIES} />
+        <Card title="Others" technologies={OTHER_TECHNOLOGIES} />
       </div>
     </section>
   );
 };
-
-export default SkillsSection;
