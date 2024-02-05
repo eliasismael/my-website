@@ -2,6 +2,7 @@ import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 
 import { SERVICE_ID, TENPLATE_ID, PUBLIC_KEY } from "../constants/emailjs";
+import { Input } from "./Form/components/Input";
 
 const Contact = () => {
   const form = useRef<any>();
@@ -44,7 +45,7 @@ const Contact = () => {
           onSubmit={(e) => sendEmail(e)}
           className="w-full max-w-lg"
         >
-          <div className="mb-4">
+          {/* <div className="mb-4">
             <label htmlFor="name" className="block text-lg mb-2">
               Name
             </label>
@@ -61,13 +62,23 @@ const Contact = () => {
               onChange={(evt) => setName(evt.target.value)}
               required
             />
-          </div>
+          </div> */}
 
-          <div className="mb-4">
-            <label htmlFor="email" className="block text-lg  mb-2">
+          <Input
+            id="name"
+            type="text"
+            placeholder="Your Name"
+            name="user_name"
+            value={email}
+            onChange={(evt) => setName(evt.target.value)}
+          />
+
+          {/* <div className="mb-4"> */}
+          {/* <label htmlFor="email" className="block text-lg  mb-2">
               Email
-            </label>
+            </label> */}
 
+          {/* 
             <input
               className="w-full p-2 border-2 text-gray-500 border-gray-300 rounded focus:outline-none focus:border-green-900"
               id="email"
@@ -77,8 +88,17 @@ const Contact = () => {
               onChange={(evt) => setEmail(evt.target.value)}
               name="user_email"
               required
-            />
-          </div>
+            /> */}
+
+          <Input
+            id="email"
+            type="email"
+            placeholder="Your Email"
+            value={email}
+            onChange={(evt) => setEmail(evt.target.value)}
+            name="user_email"
+          />
+          {/* </div> */}
 
           <div className="mb-4">
             <label htmlFor="message" className="block text-lg  mb-2">
