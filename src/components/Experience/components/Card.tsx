@@ -13,8 +13,7 @@ interface CardProps {
 export const Card: React.FC<CardProps> = (props) => {
   const [borderColor, setBorderColor] = useState("border-gray-800");
 
-  const { position, img, company, period, technologies, link, description } =
-    props;
+  const { position, img, company, period, technologies, description } = props;
   return (
     <div
       className={`flex flex-col sm:flex-row w-full bg-gray-700 rounded-md shadow-md shadow-black cursor-pointer border-2 ${borderColor} duration-300`}
