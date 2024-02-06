@@ -58,11 +58,13 @@ const Presentation = () => {
         shadow-violet-950/10"
         style={{ textShadow: "4px 4px 10px rgb(0,0,0,0.3)" }}
       >
-        <p className="text-xl text-center tracking-wider">
+        <p className="text-xl text-start tracking-wider">
           Passionate about innovation and technology, I am self-taught developer
           with a focused approach to building quality software with an emphasis
-          on scalability, accessibility and user experience. I bring expertise
-          in the development of diverse web-based applications, encompassing:
+          on scalability, accessibility and user experience.
+          <br />
+          <br />I bring expertise in the development of diverse web-based
+          applications, encompassing:
         </p>
 
         <ul className="list-none mt-4 text-start">

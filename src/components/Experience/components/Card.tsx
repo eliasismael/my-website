@@ -40,10 +40,8 @@ export const Card: React.FC<CardProps> = (props) => {
         </div>
 
         {/* SUBTITLES */}
-        <div className="w-full border">
-          <span className="text-sm text-gray-300 border border-white sm:text-start">
-            {period}
-          </span>
+        <div className="w-full">
+          <span className="text-sm text-gray-300 sm:text-start">{period}</span>
         </div>
 
         <div>
