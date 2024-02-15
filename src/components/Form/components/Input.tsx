@@ -20,7 +20,7 @@ export const Input: React.FC<InputProps> = (props) => {
       </label>
 
       <input
-        className="w-full p-2 border-2 text-gray-500 border-gray-300 rounded focus:outline-none focus:border-green-900"
+        className="w-full px-4 py-2 border text-white border-violet-800 bg-violet-900/5 rounded-xl outline-none focus:border-violet-700 transition"
         id={id}
         type={type}
         placeholder={placeholder}

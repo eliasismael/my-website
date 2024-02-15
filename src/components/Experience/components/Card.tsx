@@ -16,11 +16,11 @@ export const Card: React.FC<CardProps> = (props) => {
   const { position, img, company, period, technologies, description } = props;
   return (
     <div
-      className={`flex flex-col sm:flex-row w-full bg-gray-700 rounded-md shadow-md shadow-black cursor-pointer border-2 ${borderColor} duration-300`}
+      className={`flex flex-col md:flex-row w-full bg-gray-700 rounded-md shadow-md shadow-black cursor-pointer border-2 ${borderColor} duration-300`}
       onMouseEnter={() => setBorderColor("border-violet-500")}
       onMouseLeave={() => setBorderColor("border-gray-800")}
     >
-      <div className="w-full sm:w-1/5">
+      <div className="">
         <img
           src={img}
           alt="Company logo"
@@ -31,7 +31,7 @@ export const Card: React.FC<CardProps> = (props) => {
       {/* INFO */}
       <div className="flex flex-col px-3 sm:px-4 sm:py-2 py-4 w-full sm:w-4/5">
         {/* TITLE */}
-        <div className="flex flex-col sm:flex-row items-center gap-3">
+        <div className="flex flex-col sm:flex-row items-baseline gap-3">
           <span className="text-white text-2xl/4 text-center sm:text-start">
             {position}
           </span>

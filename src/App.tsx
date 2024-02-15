@@ -1,8 +1,8 @@
-import Footer from "./components/Footer";
-import Layout from "./components/Layout";
-import Presentation from "./components/Presentation";
-import Contact from "./components/Contact";
-import Header from "./components/Header/Header";
+import { Footer } from "./components/Footer";
+import { Layout } from "./components/Layout";
+import { Presentation } from "./components/Presentation";
+import { Contact } from "./components/Contact";
+import { Header } from "./components/Header/Header";
 import { Experience } from "./components/Experience/Experience";
 import { Projects } from "./components/Projects/Projects";
 import { Skills } from "./components/Skills/Skills";

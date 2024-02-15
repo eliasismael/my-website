@@ -82,7 +82,7 @@ export const FRONTEND_TECHNOLOGIES: Technologie[] = [
     name: "Router",
     src: reactRouter,
     alt: "React Router Dom Logo",
-    color: "red",
+    color: "#FF0000",
   },
   {
     name: "Query",
@@ -100,7 +100,7 @@ export const FRONTEND_TECHNOLOGIES: Technologie[] = [
     name: "Next.js",
     src: next,
     alt: "Next Logo",
-    color: "white",
+    color: "#FFFFFF",
   },
 ];
 
@@ -121,7 +121,7 @@ export const BLOCKCHAIN_TECHNOLOGIES: Technologie[] = [
     name: "Foundry",
     src: foundry,
     alt: "Foundry Logo",
-    color: "white",
+    color: "#FFFFFF",
   },
   {
     name: "Ethers.js",
@@ -142,21 +142,15 @@ export const OTHER_TECHNOLOGIES: Technologie[] = [
     name: "GIT",
     src: git,
     alt: "GIT Logo",
-    color: "orange",
+    color: "#FF6400",
   },
   {
     name: "GitHub",
     src: github,
     alt: "GitHub Logo",
-    color: "white",
+    color: "#FFFFFF",
   },
 
-  {
-    name: "VSC",
-    src: vsc,
-    alt: "Visual Studio Code Logo",
-    color: "#2674D1",
-  },
   {
     name: "Node.js",
     src: node,

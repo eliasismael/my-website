@@ -3,8 +3,10 @@ import emailjs from "@emailjs/browser";
 
 import { SERVICE_ID, TENPLATE_ID, PUBLIC_KEY } from "../constants/emailjs";
 import { Input } from "./Form/components/Input";
+import { FaCopy } from "react-icons/fa6";
+import { MdOutlineDownloadDone } from "react-icons/md";
 
-const Contact = () => {
+export const Contact: React.FC = () => {
   const form = useRef<any>();
 
   const [isMessageSent, setIsMessageSent] = useState(false);
@@ -13,6 +15,7 @@ const Contact = () => {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
+  const [coppiedMessage, setCoppiedMessage] = useState(false);
   const sendEmail = async (e: any) => {
     e.preventDefault();
 
@@ -32,13 +35,40 @@ const Contact = () => {
       );
   };
 
+  const myEmail = "eliasismael.pereyra@gmail.com";
+
+  const copyEmail = () => {
+    window.navigator.clipboard.writeText(myEmail);
+
+    setCoppiedMessage(true);
+
+    setTimeout(() => {
+      setCoppiedMessage(false);
+    }, 2000);
+  };
+
   return (
     <div id="contact" className="w-full py-8 mb-10 text-white">
-      <h3 className="text-4xl text-center font-extrabold tracking-wide mb-8">
+      <h3 className="text-5xl text-center font-extrabold tracking-wide mb-8">
         Contact
       </h3>
 
       <div className="w-full flex flex-col justify-center items-center bg-transparent shadow-md rounded-lg">
+        <div className="flex items-center relative my-2 flex-col sm:flex-row w-full">
+          Send to
+          <span className="flex items-center mx-1 px-3 py-1 font-medium rounded-full border border-violet-600 bg-violet-700/10  transition">
+            eliasismael.pereyra@gmail.com
+            <button className="ml-4" onClick={copyEmail}>
+              <FaCopy className="h-4 w-4 text-gray-100 hover:text-white active:text-purple-500 transition" />
+            </button>
+          </span>
+          <span
+            className={`absolute right-0 translate-x-[100%] flex flex-col sm:flex-row items-center ${coppiedMessage ? "opacity-100" : "opacity-0"} duration-150`}
+          >
+            <MdOutlineDownloadDone className="text-green-500 w-6 h-6" />
+          </span>
+        </div>
+
         <form
           ref={form}
           onSubmit={(e) => sendEmail(e)}
@@ -68,7 +98,7 @@ const Contact = () => {
             </label>
 
             <textarea
-              className="w-full p-2 border-2 text-gray-500 border-gray-300 rounded focus:outline-none focus:border-green-900"
+              className="w-full py-2 px-4 border text-white bg-violet-900/5 border-violet-800 rounded-xl outline-none focus:border-violet-600 transition"
               id="message"
               placeholder="Hi Elías, I want to build things with you!"
               value={message}
@@ -81,7 +111,7 @@ const Contact = () => {
 
           {!isMessageSent && (
             <button
-              className="bg-gray-800 w-full text-white font-semibold py-2 px-4 rounded-lg hover:bg-gray-900 duration-300"
+              className="bg-violet-900 w-full text-white font-medium text-lg py-2 px-4 rounded-lg hover:bg-violet-800 duration-300"
               type="submit"
             >
               Send
@@ -107,5 +137,3 @@ const Contact = () => {
     </div>
   );
 };
-
-export default Contact;

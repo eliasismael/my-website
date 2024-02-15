@@ -12,7 +12,7 @@ export const Card: React.FC<CardProps> = (props) => {
 
   return (
     <div
-      className={`pointer-events-none duration-500 w-full flex flex-col justify-between rounded-2xl px-6 border-2 border-violet-700 shadow-lg bg-blue-950/30`}
+      className={`pointer-events-none duration-500 w-full h-fit mr-auto flex flex-col justify-center items-cemter rounded-3xl border-2 border-violet-700 shadow-lg bg-blue-950/30`}
       style={{
         borderColor: `${bgColorOnHover}`,
         boxShadow: `-2px 2px 10px ${bgColorOnHover || "purple"}`,
@@ -26,7 +26,7 @@ export const Card: React.FC<CardProps> = (props) => {
         {technologies.map((element) => (
           <div
             key={element.name}
-            className="pointer-events-auto w-20 h-20 mx-2 flex flex-col justify-evenly items-center m-4 hover:scale-110 duration-500"
+            className="pointer-events-auto w-20 h-20 mx-2 flex flex-col justify-evenly items-center m-4"
             onMouseEnter={() => {
               setBgColorOnHover(element.color);
             }}
@@ -34,7 +34,10 @@ export const Card: React.FC<CardProps> = (props) => {
             <img
               src={element.src}
               alt={element.alt}
-              className="h-12 w-12 object-contain mb-2 hover:group-pepe-bg-black"
+              className="h-12 w-12 object-contain mb-2"
+              style={{
+                filter: `drop-shadow(2px 2px 10px ${element.color}80)`,
+              }}
             />
 
             <p>{element.name}</p>

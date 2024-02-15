@@ -7,7 +7,7 @@ import { buttonsInfo } from "./constants/buttonsInfo";
 
 interface HeaderProps {}
 
-const Header: React.FC<HeaderProps> = () => {
+export const Header: React.FC<HeaderProps> = () => {
   const { windowWidth } = useWindowWidth();
   const [isMenuVisible, setIsMenuVisible] = useState(false);
 
@@ -44,5 +44,3 @@ const Header: React.FC<HeaderProps> = () => {
     </div>
   );
 };
-
-export default Header;

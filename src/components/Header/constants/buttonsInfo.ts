@@ -4,6 +4,10 @@ export const buttonsInfo = [
     sectionToScroll: "aboutMe",
   },
   {
+    text: "Experience",
+    sectionToScroll: "experience",
+  },
+  {
     text: "Projects",
     sectionToScroll: "projects",
   },

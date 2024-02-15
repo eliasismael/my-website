@@ -22,27 +22,26 @@ const Card: React.FC<CardProps> = (props) => {
         </a>
       </div>
 
-      {/* TECHNOLOGIES */}
-      <div className="flex gap-2 flex-wrap mt-2 px-4 ">
-        {technologies.map((technologie) => (
-          <span
-            key={technologie}
-            className="px-0 py-0.5 text-[10px] rounded-lg text-gray-400"
-          >
-            {technologie}
-          </span>
-        ))}
-      </div>
-
       {/* ABOUT */}
-      <div className="bg-gray-800 px-4 my-2 rounded-2xl">
+      <div className="bg-gray-800 px-3 my-2 rounded-2xl">
         <a href={deploy} target="_blank">
-          <h4 className="text-2xl mb-2 font-semibold hover:underline">
-            {title}
-          </h4>
+          <h4 className="text-2xl font-medium hover:underline ">{title}</h4>
         </a>
         {/* <span className="text-xs text-gray-400">{date}</span> */}
-        <p className="text-md">{info}</p>
+
+        {/* TECHNOLOGIES */}
+        <div className="flex gap-2 justify-start flex-wrap my-2">
+          {technologies.map((technologie) => (
+            <span
+              key={technologie}
+              className=" text-[12px]/[16px] rounded-lg text-gray-400"
+            >
+              {technologie}
+            </span>
+          ))}
+        </div>
+
+        <p className="text-md font-normal">{info}</p>
       </div>
     </div>
   );

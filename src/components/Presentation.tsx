@@ -5,7 +5,7 @@ import {
   AiFillGithub,
 } from "react-icons/ai";
 
-const Presentation = () => {
+export const Presentation: React.FC = () => {
   return (
     <section
       id="aboutMe"
@@ -113,5 +113,3 @@ const Presentation = () => {
     </section>
   );
 };
-
-export default Presentation;
