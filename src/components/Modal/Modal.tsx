@@ -14,14 +14,10 @@ export const Modal: React.FC<ModalProps> = (props) => {
   return (
     <>
       <div
-        className="w-screen z-50 h-screen fixed inset-0 opacity-50 bg-black"
+        className="w-screen z-50 h-screen fixed inset-0 opacity-80 bg-black"
         onClick={onClose}
       ></div>
-
-      <div className="w-80 h-60 bg-gray-300 rounded-xl opacity-100 m-auto fixed inset-0 z-50 p-2">
-        <span className="text-white" onClick={onClose}>
-          &times;
-        </span>
+      <div className="h-fit w-4/5 sm:w-3/5 m-auto fixed inset-0 z-50">
         {children}
       </div>
     </>

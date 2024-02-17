@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { Modal } from "../../Modal/Modal";
+import { ModalContent } from "./ModalContent";
 
-interface CardProps {
+export interface ProjectCardProps {
   image: string;
   title: string;
   technologies: string[];
@@ -11,7 +12,7 @@ interface CardProps {
   code: string;
 }
 
-const Card: React.FC<CardProps> = (props) => {
+const ProjectCard: React.FC<ProjectCardProps> = (props) => {
   const { title, technologies, info, image, deploy, code } = props;
   const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -61,7 +62,6 @@ const Card: React.FC<CardProps> = (props) => {
 
           <div className="flex flex-col gap-2">
             <p className={`text-md font-normal overflow-hidden`}>
-              {/* {info} */}
               {info.length > 100 ? `${info.slice(0, 100)}...` : info}
             </p>
 
@@ -79,11 +79,13 @@ const Card: React.FC<CardProps> = (props) => {
         <Modal
           isOpen={isModalOpen}
           onClose={() => setIsModalOpen(false)}
-          children={null}
+          children={
+            <ModalContent {...props} onClose={() => setIsModalOpen(false)} />
+          }
         />
       )}
     </>
   );
 };
 
-export default Card;
+export default ProjectCard;

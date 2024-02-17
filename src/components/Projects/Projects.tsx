@@ -1,4 +1,4 @@
-import Card from "./components/Card";
+import ProjectCard from "./components/ProjectCard";
 import { projectsInfo } from "./constants/projectsInfo";
 
 export const Projects = () => {
@@ -20,7 +20,7 @@ export const Projects = () => {
         sm:justify-between"
       >
         {projectsInfo.map((project) => (
-          <Card key={project.title} {...project} />
+          <ProjectCard key={project.title} {...project} />
         ))}
       </div>
     </section>
