@@ -8,19 +8,20 @@ import react from "../../../assets/img/technologies_logos/react.png";
 import vite from "../../../assets/img/technologies_logos/Vitejs-logo.svg.png";
 import next from "../../../assets/img/technologies_logos/next.webp";
 import node from "../../../assets/img/technologies_logos/2560px-Node.js_logo.svg.png";
-import redux from "../../../assets/img/technologies_logos/redux.svg";
+// import redux from "../../../assets/img/technologies_logos/redux.svg";
 import reactRouter from "../../../assets/img/technologies_logos/react-router.png";
-import reactQuery from "../../../assets/img/technologies_logos/react-query.png";
+// import reactQuery from "../../../assets/img/technologies_logos/react-query.png";
 
 import solidity from "../../../assets/img/technologies_logos/solidity-logo.svg";
 import hardhat from "../../../assets/img/technologies_logos/hardhat.png";
-import foundry from "../../../assets/img/technologies_logos/foundry.png";
+// import foundry from "../../../assets/img/technologies_logos/foundry.png";
 import ethers from "../../../assets/img/technologies_logos/ethers.png";
 import web3 from "../../../assets/img/technologies_logos/web3js.png";
+import walletConnect from "../../../assets/img/technologies_logos/wallet-connect-logo.png";
 
 import git from "../../../assets/img/technologies_logos/git-logo.png";
 import github from "../../../assets/img/technologies_logos/github-icon.png";
-import vsc from "../../../assets/img/technologies_logos/vsc.png";
+// import vsc from "../../../assets/img/technologies_logos/vsc.png";
 
 export interface Technologie {
   name: string;
@@ -61,10 +62,10 @@ export const FRONTEND_TECHNOLOGIES: Technologie[] = [
     color: "#00C6BA",
   },
   {
-    name: "Material UI",
+    name: "Material",
     src: mui,
     alt: "Material UI Logo",
-    color: "blue",
+    color: "#0013FF",
   },
   {
     name: "React.js",
@@ -72,24 +73,24 @@ export const FRONTEND_TECHNOLOGIES: Technologie[] = [
     alt: "React Logo",
     color: "#00C3DE",
   },
-  {
-    name: "Redux",
-    src: redux,
-    alt: "Redux Logo",
-    color: "#7839E6",
-  },
+  // {
+  //   name: "Redux",
+  //   src: redux,
+  //   alt: "Redux Logo",
+  //   color: "#7839E6",
+  // },
   {
     name: "Router",
     src: reactRouter,
     alt: "React Router Dom Logo",
     color: "#FF0000",
   },
-  {
-    name: "Query",
-    src: reactQuery,
-    alt: "React Query Logo",
-    color: "#D53838",
-  },
+  // {
+  //   name: "Query",
+  //   src: reactQuery,
+  //   alt: "React Query Logo",
+  //   color: "#D53838",
+  // },
   {
     name: "Vite.js",
     src: vite,
@@ -117,12 +118,12 @@ export const BLOCKCHAIN_TECHNOLOGIES: Technologie[] = [
     alt: "Hardhat Logo",
     color: "#E9F31B",
   },
-  {
-    name: "Foundry",
-    src: foundry,
-    alt: "Foundry Logo",
-    color: "#FFFFFF",
-  },
+  // {
+  //   name: "Foundry",
+  //   src: foundry,
+  //   alt: "Foundry Logo",
+  //   color: "#FFFFFF",
+  // },
   {
     name: "Ethers.js",
     src: ethers,
@@ -134,6 +135,12 @@ export const BLOCKCHAIN_TECHNOLOGIES: Technologie[] = [
     src: web3,
     alt: "Web3.js Logo",
     color: "#C4631F",
+  },
+  {
+    name: "Connect",
+    src: walletConnect,
+    alt: "Wallet connect Logo",
+    color: "#0093FF",
   },
 ];
 

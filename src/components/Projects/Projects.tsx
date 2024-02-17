@@ -7,7 +7,7 @@ export const Projects = () => {
       id="projects"
       className="w-full text-white flex flex-col items-center"
     >
-      <div className="w-full">
+      <div className="w-full mb-4">
         <h3 className="text-5xl tracking-wider font-semibold text-end">
           Personal Projects
         </h3>

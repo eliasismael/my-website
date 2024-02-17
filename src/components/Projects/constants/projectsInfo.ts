@@ -40,7 +40,7 @@ export const projectsInfo = [
     date: "jun-23 dec-23",
     info: "Web app where users find a partner. Includes functionality to add users and contact section. Visually appealing interface and intuitive user experience.",
     deploy: "https://find-your-love-app.vercel.app/",
-    code: "",
+    code: "https://github.com/eliasismael/find-your-love-ts",
   },
   {
     image: imgDreamHouse,
@@ -57,7 +57,7 @@ export const projectsInfo = [
     date: "jun-23 dec-23",
     info: "House rental web platform from scratch. Includes registration and login, search filtering, agent communication, and property highlighting. Intuitive navigation with React Router routing.",
     deploy: "https://real-estate-app-coral.vercel.app/",
-    code: "",
+    code: "https://github.com/eliasismael/real-estate-app",
   },
   {
     image: imgSnakeGame,
@@ -66,7 +66,7 @@ export const projectsInfo = [
     date: "jun-23 dec-23",
     info: `Video game based on the popular snake game. Includes point logging, pause functionality and collision detection. Strong logical work.`,
     deploy: "https://snake-game-theta-seven.vercel.app/",
-    code: "",
+    code: "https://github.com/eliasismael/snake-game",
   },
   {
     image: imgRockPaperSccisors,
@@ -75,7 +75,7 @@ export const projectsInfo = [
     date: "jun-23 dec-23",
     info: `Video game based on the game of rock, paper, scissors. It includes the registration of users and their victories and the possibility of being used with two players. Visually pleasing interface and simple user experience.`,
     deploy: "https://rock-paper-scissors-two-zeta.vercel.app/",
-    code: "",
+    code: "https://github.com/eliasismael/rock-paper-scissors",
   },
   {
     image: imgElectionSimulator,
@@ -85,6 +85,6 @@ export const projectsInfo = [
     info: `Website that controls electoral processes. Includes creation of candidates and their proposals, voters and unique and
           identifiable personal data, ability to perform tiebreakers. Logical work for the grammatical rules of proper nouns in Spanish`,
     deploy: "https://election-simulator.vercel.app/",
-    code: "",
+    code: "https://github.com/eliasismael/election-simulator",
   },
 ];

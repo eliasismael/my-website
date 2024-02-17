@@ -16,7 +16,8 @@ export const Contact: React.FC = () => {
   const [message, setMessage] = useState("");
 
   const [coppiedMessage, setCoppiedMessage] = useState(false);
-  const sendEmail = async (e: any) => {
+
+  const sendEmail = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     await emailjs
@@ -39,9 +40,7 @@ export const Contact: React.FC = () => {
 
   const copyEmail = () => {
     window.navigator.clipboard.writeText(myEmail);
-
     setCoppiedMessage(true);
-
     setTimeout(() => {
       setCoppiedMessage(false);
     }, 2000);
@@ -53,19 +52,19 @@ export const Contact: React.FC = () => {
         Contact
       </h3>
 
-      <div className="w-full flex flex-col justify-center items-center bg-transparent shadow-md rounded-lg">
-        <div className="flex items-center relative my-2 flex-col sm:flex-row w-full">
+      <div className="w-full flex flex-col justify-center items-center bg-transparent shadow-md  rounded-lg">
+        <div className="flex  items-center relative my-2 flex-col sm:flex-row">
           Send to
-          <span className="flex items-center mx-1 px-3 py-1 font-medium rounded-full border border-violet-600 bg-violet-700/10  transition">
+          <span className="flex items-center mx-1 px-3 py-1 font-medium rounded-full  border-violet-600 bg-violet-700/10  transition">
             eliasismael.pereyra@gmail.com
             <button className="ml-4" onClick={copyEmail}>
               <FaCopy className="h-4 w-4 text-gray-100 hover:text-white active:text-purple-500 transition" />
             </button>
-          </span>
-          <span
-            className={`absolute right-0 translate-x-[100%] flex flex-col sm:flex-row items-center ${coppiedMessage ? "opacity-100" : "opacity-0"} duration-150`}
-          >
-            <MdOutlineDownloadDone className="text-green-500 w-6 h-6" />
+            <span
+              className={`absolute right-0 translate-x-[100%] flex flex-col sm:flex-row items-center ${coppiedMessage ? "opacity-100" : "opacity-0"} duration-150`}
+            >
+              <MdOutlineDownloadDone className="text-green-500 w-6 h-6" />
+            </span>
           </span>
         </div>
 
@@ -98,7 +97,7 @@ export const Contact: React.FC = () => {
             </label>
 
             <textarea
-              className="w-full py-2 px-4 border text-white bg-violet-900/5 border-violet-800 rounded-xl outline-none focus:border-violet-600 transition"
+              className="w-full py-2 px-4 border text-white bg-violet-900/5 border-violet-900 rounded-xl outline-none focus:border-violet-600 transition"
               id="message"
               placeholder="Hi Elías, I want to build things with you!"
               value={message}

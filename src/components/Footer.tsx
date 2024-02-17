@@ -6,6 +6,7 @@ import {
 
 export const Footer: React.FC = () => (
   <footer className="h-24 bg-gray-800 text-white text-sm flex flex-col justify-evenly items-center">
+    {/* ICONS */}
     <div className="flex justify-center items-center gap-10">
       <a href="https://linkedin.com/in/eliaspereyra" target="_blanck">
         <AiFillLinkedin className="footer_icon" />
@@ -17,6 +18,7 @@ export const Footer: React.FC = () => (
         <AiFillGithub className="footer_icon" />
       </a>
     </div>
+    {/* TEXT */}
     <p>&#169; {new Date().getFullYear()} Elías Pereyra. All rights reserved</p>
   </footer>
 );
