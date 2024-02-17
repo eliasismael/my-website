@@ -20,7 +20,7 @@ export const Card: React.FC<CardProps> = (props) => {
       onMouseEnter={() => setBorderColor("border-violet-500")}
       onMouseLeave={() => setBorderColor("border-gray-800")}
     >
-      <div className="">
+      <div className="w-full md:w-auto h-60 md:h-auto">
         <img
           src={img}
           alt="Company logo"
@@ -51,7 +51,9 @@ export const Card: React.FC<CardProps> = (props) => {
           <span className="text-xs text-gray-300 ">www.tateti.com</span>
         </div> */}
 
-        <div>{description}</div>
+        <div className="text-ellipsis overflow-hidden w-full block whitespace-wrap">
+          {description}
+        </div>
       </div>
     </div>
   );

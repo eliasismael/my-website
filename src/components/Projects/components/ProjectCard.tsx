@@ -19,30 +19,29 @@ const ProjectCard: React.FC<ProjectCardProps> = (props) => {
   return (
     <>
       <div
-        className="w-full bg-gray-800 rounded-xl shadow-sm lg:w-[29%] shadow-gray-700 hover:shadow-gray-300 overflow-hidden
-      
+        className="w-full h-auto bg-gray-800 rounded-xl shadow-sm lg:w-[29%] shadow-gray-700 hover:shadow-gray-300 overflow-hidden
       opacity-90 hover:opacity-100 duration-300
       "
       >
         {/* IMAGE */}
-        <div className="w-full rounded-2xl">
+        <div className=" w-full rounded-2xl">
           <a href={deploy} target="_blank">
             <img
               src={image}
-              className=" w-full h-52 object-cover rounded-t-2xl "
+              className="w-full h-52 object-cover rounded-t-2xl "
             />
           </a>
         </div>
 
         {/* ABOUT */}
-        <div className="bg-gray-800 px-3 my-2 rounded-2xl">
+        <div className="bg-gray-800 flex flex-col px-3 mt-2 rounded-2xl">
           <a href={deploy} target="_blank">
             <h4 className="text-2xl font-medium hover:underline ">{title}</h4>
           </a>
 
-          <div>
+          <div className="mt-2">
             <a href={code} target="_blank">
-              <span className="text-xs text-gray-300 hover:underline transition break-words">
+              <span className="text-xs text-gray-300 hover:underline transition overflow-hidden text-ellipsis w-full block whitespace-nowrap">
                 {code}
               </span>
             </a>
@@ -60,18 +59,18 @@ const ProjectCard: React.FC<ProjectCardProps> = (props) => {
             ))}
           </div>
 
-          <div className="flex flex-col gap-2">
+          <div className="">
             <p className={`text-md font-normal overflow-hidden`}>
-              {info.length > 100 ? `${info.slice(0, 100)}...` : info}
+              {info.length > 60 ? `${info.slice(0, 60)}...` : info}
             </p>
-
-            <span
-              onClick={() => setIsModalOpen(true)}
-              className="cursor-pointer px-2 py-0.5 rounded-full border border-gray-400 hover:border-gray-300 break-normal text-center mt-auto bg-black/40 hover:bg-black/30 duration-300"
-            >
-              See details
-            </span>
           </div>
+
+          <button
+            onClick={() => setIsModalOpen(true)}
+            className="cursor-pointer px-2 py-0.5 my-2 rounded-full border border-gray-400 hover:border-gray-300 break-normal text-center bg-black/40 hover:bg-black/30 duration-300"
+          >
+            See details
+          </button>
         </div>
       </div>
 
