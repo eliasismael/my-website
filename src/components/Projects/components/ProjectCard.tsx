@@ -48,7 +48,10 @@ const ProjectCard: React.FC<ProjectCardProps> = (props) => {
           </div>
 
           {/* TECHNOLOGIES */}
-          <div className="flex gap-2 justify-start flex-wrap my-2">
+          <div
+            className="flex gap-2 justify-start flex-wrap my-2 lg
+          :h-10"
+          >
             {technologies.map((technologie) => (
               <span
                 key={technologie}

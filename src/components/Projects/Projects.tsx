@@ -17,7 +17,7 @@ export const Projects = () => {
         className="w-full flex flex-col py-10 gap-10
         sm:flex-row
         sm:flex-wrap
-        sm:justify-between"
+        sm:justify-center"
       >
         {projectsInfo.map((project) => (
           <ProjectCard key={project.title} {...project} />
