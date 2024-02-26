@@ -2,8 +2,8 @@ import imgCryptoSurvey from "../../../assets/img/projects_pictures/crypto-survey
 import imgFindYourLoveApp from "../../../assets/img/projects_pictures/fylapp.jpg";
 import imgDreamHouse from "../../../assets/img/projects_pictures/dreamhouse.jpg";
 import imgSnakeGame from "../../../assets/img/projects_pictures/snake-game.jpg";
-import imgRockPaperSccisors from "../../../assets/img/projects_pictures/rock-paper-sccisors.jpg";
-import imgElectionSimulator from "../../../assets/img/projects_pictures/election-simulator.jpg";
+// import imgRockPaperSccisors from "../../../assets/img/projects_pictures/rock-paper-sccisors.jpg";
+// import imgElectionSimulator from "../../../assets/img/projects_pictures/election-simulator.jpg";
 import imgZurf from "../../../assets/img/projects_pictures/zurf.jpg";
 
 export const projectsInfo = [

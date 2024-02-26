@@ -1,9 +1,9 @@
-import { useState } from "react";
+// import { useState } from "react";
 
-const ButtonChangeLenguage = () => {
-  const [lenguage, setLenguage] = useState<"en" | "es">("en");
+// const ButtonChangeLenguage = () => {
+//   const [lenguage, setLenguage] = useState<"en" | "es">("en");
 
-  return <div className="w-">ButtonChangeLenguage</div>;
-};
+//   return <div className="w-">ButtonChangeLenguage</div>;
+// };
 
-export default ButtonChangeLenguage;
+// export default ButtonChangeLenguage;
