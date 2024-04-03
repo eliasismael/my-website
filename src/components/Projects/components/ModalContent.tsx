@@ -12,12 +12,15 @@ export const ModalContent: React.FC<ModalContentProps> = (props) => {
     <div className="lg:flex rounded-2xl overflow-hidden">
       <section className=" relative lg:w-1/2 overflow-hidden">
         <a href={deploy} target="_blank">
-          <img src={image} className="w-full h-80 object-cover" />
+          <img
+            src={image}
+            className="w-full aspect-square h-full object-cover "
+          />
         </a>
       </section>
 
       {/* ABOUT */}
-      <section className="bg-gray-800 px-3 py-2 flex-1 h-auto flex flex-col ">
+      <section className="bg-gray-800 p-4 pl-6 flex-1 h-auto flex flex-col ">
         <header className="flex items-center">
           <a href={deploy} target="_blank">
             <h4 className="text-3xl font-medium hover:underline ">{title}</h4>

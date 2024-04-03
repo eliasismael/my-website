@@ -6,13 +6,17 @@ import { Header } from "./components/Header/Header";
 import { Experience } from "./components/Experience/Experience";
 import { Projects } from "./components/Projects/Projects";
 import { Skills } from "./components/Skills/Skills";
+import { PresentationDesktop } from "./components/PresentationDesktop";
+import useWindowWidth from "./hooks/useWindowWidth";
 
 function App() {
+  const { windowWidth } = useWindowWidth();
   return (
     <>
       <Header />
       <Layout>
-        <Presentation />
+        {windowWidth < 1440 ? <Presentation /> : <PresentationDesktop />}
+
         <Experience />
         <Skills />
         <Projects />
