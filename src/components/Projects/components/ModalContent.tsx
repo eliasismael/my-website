@@ -1,3 +1,4 @@
+import useWindowWidth from "../../../hooks/useWindowWidth";
 import { ProjectCardProps } from "./ProjectCard";
 import { IoCloseCircleOutline } from "react-icons/io5";
 
@@ -7,10 +8,15 @@ interface ModalContentProps extends ProjectCardProps {
 
 export const ModalContent: React.FC<ModalContentProps> = (props) => {
   const { deploy, image, info, technologies, title, code, onClose } = props;
+  const { windowWidth } = useWindowWidth();
 
   return (
-    <div className="lg:flex rounded-2xl overflow-hidden">
-      <section className=" relative lg:w-1/2 overflow-hidden">
+    <div
+      className={`lg:flex rounded-2xl overflow-hidden ${windowWidth < 576 && "h"}`}
+    >
+      <section
+        className={` relative lg:w-1/2 overflow-hidden  ${windowWidth < 1024 && "hidden"}`}
+      >
         <a href={deploy} target="_blank">
           <img
             src={image}
@@ -58,18 +64,18 @@ export const ModalContent: React.FC<ModalContentProps> = (props) => {
         <p className={`text-md font-normal overflow-hidden`}>{info}</p>
         {/* </div> */}
 
-        <div className="w-full mt-auto mb-2 flex gap-2">
+        <div className="w-full mt-2 mb-2 flex gap-2">
           <a
             href={code}
             target="_blank"
-            className="w-1/2 text-center rounded-full shadow-md shadow-black/30 bg-gray-950 hover:bg-gray-900 text-white px-4 py-2 duration-300"
+            className="w-1/2 text-center flex justify-center items-center rounded-full shadow-md shadow-black/30 bg-gray-950 hover:bg-gray-900 text-white px-4 py-2 duration-300"
           >
             View code
           </a>
           <a
             href={deploy}
             target="_blank"
-            className="w-1/2 text-center rounded-full shadow-md shadow-black/30 bg-violet-800 hover:bg-violet-700  text-white px-4 py-2 duration-300"
+            className="w-1/2 text-center flex justify-center items-center rounded-full shadow-md shadow-black/30 bg-violet-800 hover:bg-violet-700  text-white px-4 py-2 duration-300"
           >
             View live app
           </a>
