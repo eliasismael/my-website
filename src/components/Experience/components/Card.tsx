@@ -24,7 +24,7 @@ export const Card: React.FC<CardProps> = (props) => {
         />
       </div> */}
 
-      <div className="w-full md:w-60 md:h-full overflow-visible bg-red-500">
+      <div className="w-full md:w-60 md:h-full overflow-visible ">
         {" "}
         <img
           src={img}
@@ -36,7 +36,7 @@ export const Card: React.FC<CardProps> = (props) => {
       </div>
 
       {/* INFO */}
-      <div className="flex flex-col px-3  sm:px-4 sm:py-2 w-full sm:w-4/5 ">
+      <div className="flex flex-col px-3 sm:px-4 sm:py-2 w-full sm:w-4/5 mt-2 sm:mt-0">
         {/* TITLE */}
         <div className="flex flex-col sm:flex-row items-baseline gap-3 px-2 mt-2">
           <span className="text-white text-2xl/4 text-center sm:text-start">

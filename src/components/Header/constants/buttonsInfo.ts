@@ -7,13 +7,14 @@ export const buttonsInfo = [
     text: "Experience",
     sectionToScroll: "experience",
   },
-  {
-    text: "Projects",
-    sectionToScroll: "projects",
-  },
+
   {
     text: "Skills",
     sectionToScroll: "skills",
+  },
+  {
+    text: "Projects",
+    sectionToScroll: "projects",
   },
   {
     text: "Contact",
