@@ -56,10 +56,13 @@ export const Presentation: React.FC = () => {
         tracking-wide
         bg-violet-950/10 
         shadow-2xl
-        shadow-violet-950/10"
+        shadow-violet-950/10
+        break-words
+         whitespace-break-spaces
+        "
         style={{ textShadow: "4px 4px 10px rgb(0,0,0,0.3)" }}
       >
-        <p className="text-[16px]/[30px] sm:text-[24px]/[40px] text-center">
+        {/* <p className="text-[16px]/[30px] sm:text-[24px]/[40px] text-center">
           Specializing in
           <span className="text-[#00C3DE]"> React </span>
           and
@@ -68,6 +71,30 @@ export const Presentation: React.FC = () => {
           beautiful and responsive web applications that integrate virtual
           wallets and connect to smart contracts to create secure decentralized
           experiences.
+        </p> */}
+        <p className="text-[22px]/[40px] px-8 text-center ">
+          Specializing in
+          <span className="text-[#00C3DE] bg-[#00c4de31] px-2 rounded-full mx-1 whitespace-nowrap">
+            {" "}
+            React{" "}
+          </span>
+          and
+          <span className="text-[#2E79DF] bg-[#2e78df4f] px-2 rounded-full mx-1 whitespace-nowrap">
+            {" "}
+            TypeScript{" "}
+          </span>
+          , I am an experienced blockchain and Web3 developer focused on
+          creating beautiful and responsive web applications that
+          <span className="text-violet-500 bg-violet-950/50 rounded-full px-2  whitespace-nowrap">
+            {" "}
+            integrate virtual wallets{" "}
+          </span>
+          <span> and </span>
+          <span className="text-violet-500 bg-violet-950/50 rounded-full px-2   whitespace-nowrap">
+            {" "}
+            connect to smart contracts{" "}
+          </span>
+          to create secure decentralized experiences.
         </p>
         {/* <p className="text-xl text-start tracking-wider">
           Passionate about innovation and technology, I am self-taught developer

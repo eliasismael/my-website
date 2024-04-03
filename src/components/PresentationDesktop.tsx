@@ -28,11 +28,11 @@ export const PresentationDesktop: React.FC = () => {
               Hi, I am Elías Pereyra
             </h1>
             <h2 className="text-3xl text-center" style={{ lineHeight: "1.5" }}>
-              <strong className="text-blue-900 bg-blue-950/40 px-2 rounded-md">
+              <strong className="text-blue-700 bg-blue-950/40 px-2 rounded-md">
                 Frontend
               </strong>{" "}
               &{" "}
-              <strong className="text-violet-900 bg-violet-950/40 px-2 rounded-md">
+              <strong className="text-violet-700 bg-violet-950/40 px-2 rounded-md">
                 Blockchain
               </strong>{" "}
               Developer
@@ -61,20 +61,33 @@ export const PresentationDesktop: React.FC = () => {
         rounded-md
         w-screen sm:w-full
         tracking-wide
-        // bg-violet-950/10 
-        shadow-2xl
-        shadow-violet-950/10"
+       break-words
+        "
             style={{ textShadow: "4px 4px 10px rgb(0,0,0,0.3)" }}
           >
-            <p className="text-[22px]/[40px] px-8 text-center break-words">
+            <p className="text-[22px]/[40px] px-8 text-start  break-inside-avoid">
               Specializing in
-              <span className="text-[#00C3DE]"> React </span>
+              <span className="text-[#00C3DE] bg-[#00c4de31] px-2 rounded-full mx-1">
+                {" "}
+                React{" "}
+              </span>
               and
-              <span className="text-[#2E79DF]"> TypeScript </span>, I am an
-              experienced blockchain and Web3 developer focused on creating
-              beautiful and responsive web applications that integrate virtual
-              wallets and connect to smart contracts to create secure
-              decentralized experiences.
+              <span className="text-[#2E79DF] bg-[#2e78df4f] px-2 rounded-full mx-1">
+                {" "}
+                TypeScript{" "}
+              </span>
+              , I am an experienced blockchain and Web3 developer focused on
+              creating beautiful and responsive web applications that
+              <span className="text-violet-500 bg-violet-950/50 rounded-full px-2  whitespace-nowrap">
+                {" "}
+                integrate virtual wallets{" "}
+              </span>
+              and
+              <span className="text-violet-500 bg-violet-950/50 rounded-full px-2   whitespace-nowrap">
+                {" "}
+                connect to smart contracts{" "}
+              </span>
+              to create secure decentralized experiences.
             </p>
             {/* <p className="text-xl text-start tracking-wider">
           Passionate about innovation and technology, I am self-taught developer
