@@ -61,7 +61,7 @@ export const projectsInfo = [
   },
   {
     image: imgDreamHouse,
-    title: "Rent House ´Platform",
+    title: "Rent House Platform",
     technologies: [
       "HTML",
       "CSS",

@@ -18,11 +18,7 @@ const ProjectCard: React.FC<ProjectCardProps> = (props) => {
 
   return (
     <>
-      <div
-        className="w-full h-auto bg-gray-800 rounded-xl shadow-sm lg:w-[29%] shadow-gray-700 hover:shadow-gray-300 overflow-hidden
-      opacity-90 hover:opacity-100 duration-300
-      "
-      >
+      <div className="w-full min-h-80 h-full flex flex-col  bg-gray-800 rounded-xl shadow-sm lg:w-[29%] shadow-gray-700 hover:shadow-gray-300 overflow-hidden opacity-90 hover:opacity-100 duration-300 ">
         {/* IMAGE */}
         <div className=" w-full rounded-2xl">
           <a href={deploy} target="_blank">
@@ -48,10 +44,7 @@ const ProjectCard: React.FC<ProjectCardProps> = (props) => {
           </div>
 
           {/* TECHNOLOGIES */}
-          <div
-            className="flex gap-2 justify-start flex-wrap my-2 lg
-          :h-10"
-          >
+          <div className="flex gap-2 justify-start flex-wrap my-2 lg h-10">
             {technologies.map((technologie) => (
               <span
                 key={technologie}
@@ -63,8 +56,9 @@ const ProjectCard: React.FC<ProjectCardProps> = (props) => {
           </div>
 
           <div className="">
-            <p className={`text-md font-normal overflow-hidden`}>
-              {info.length > 60 ? `${info.slice(0, 60)}...` : info}
+            <p className={`text-md font-normal overflow-hidden flex-1`}>
+              {info.length > 100 ? `${info.slice(0, 100)}...` : info}
+              {/* {info} */}
             </p>
           </div>
 

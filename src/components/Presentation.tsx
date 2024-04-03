@@ -50,15 +50,26 @@ export const Presentation: React.FC = () => {
 
       {/* DESCRIPTION */}
       <div
-        className="py-4 px-8  text-lg text-gray-300 mt-4 
+        className="py-4 px-6 sm:px-16 text-lg text-gray-300 mt-4 
         rounded-md
+        w-screen sm:w-full
         tracking-wide
         bg-violet-950/10 
         shadow-2xl
         shadow-violet-950/10"
         style={{ textShadow: "4px 4px 10px rgb(0,0,0,0.3)" }}
       >
-        <p className="text-xl text-start tracking-wider">
+        <p className="text-[16px]/[30px] sm:text-[24px]/[40px] text-center">
+          Specializing in
+          <span className="text-[#00C3DE]"> React </span>
+          and
+          <span className="text-[#2E79DF]"> TypeScript </span>, I am an
+          experienced blockchain and Web3 developer focused on creating
+          beautiful and responsive web applications that integrate virtual
+          wallets and connect to smart contracts to create secure decentralized
+          experiences.
+        </p>
+        {/* <p className="text-xl text-start tracking-wider">
           Passionate about innovation and technology, I am self-taught developer
           with a focused approach to building quality software with an emphasis
           on scalability, accessibility and user experience.
@@ -90,7 +101,7 @@ export const Presentation: React.FC = () => {
             (DApps) on the Ethereum blockchain, expanding horizons in the world
             of decentralized finance and smart contracts.
           </li>
-        </ul>
+        </ul> */}
       </div>
 
       <div className="flex items-center justify-center mt-4">
@@ -103,7 +114,8 @@ export const Presentation: React.FC = () => {
         >
           {" "}
           <a
-            href="https://drive.google.com/file/d/1nNX-nuo4pusEUTR3VKxvPSGo6kdOSZcB/view?usp=sharing"
+            // href="https://drive.google.com/file/d/1nNX-nuo4pusEUTR3VKxvPSGo6kdOSZcB/view?usp=sharing"
+            href="https://drive.google.com/file/d/1wQw9L3m1cMgmmkQ3JTBVJhfj1KnAK2w5/view?usp=sharing"
             target="_blank"
           >
             Check resume
