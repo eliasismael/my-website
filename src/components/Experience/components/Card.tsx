@@ -1,5 +1,3 @@
-import { useState } from "react";
-
 interface CardProps {
   position: string;
   img: string;
@@ -11,12 +9,10 @@ interface CardProps {
 }
 
 export const Card: React.FC<CardProps> = (props) => {
-  const [borderColor, setBorderColor] = useState("border-gray-800");
-
   const { position, img, company, period, technologies, description } = props;
   return (
     <div
-      className={`flex flex-col md:flex-row w-full bg-gray-700 rounded-md shadow-md shadow-black border-2 ${borderColor} duration-300 overflow-hidden`}
+      className={`flex flex-col md:flex-row w-full bg-gray-700 rounded-md shadow-md shadow-black border-2 border-gray-800 duration-300 overflow-hidden`}
       // onMouseEnter={() => setBorderColor("border-violet-500")}
       // onMouseLeave={() => setBorderColor("border-gray-800")}
     >
