@@ -54,6 +54,23 @@ export const ModalContent: React.FC<ModalContentProps> = (props) => {
         {/* <div className="flex flex-col gap-2 h-max border"> */}
         <p className={`text-md font-normal overflow-hidden`}>{info}</p>
         {/* </div> */}
+
+        <div className="w-full mt-auto mb-2 flex gap-2">
+          <a
+            href={code}
+            target="_blank"
+            className="w-1/2 text-center rounded-full shadow-md shadow-black/30 bg-gray-950 hover:bg-gray-900 text-white px-4 py-2 duration-300"
+          >
+            View code
+          </a>
+          <a
+            href={deploy}
+            target="_blank"
+            className="w-1/2 text-center rounded-full shadow-md shadow-black/30 bg-violet-800 hover:bg-violet-700  text-white px-4 py-2 duration-300"
+          >
+            View live app
+          </a>
+        </div>
       </section>
     </div>
   );
