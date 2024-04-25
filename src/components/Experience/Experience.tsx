@@ -20,8 +20,8 @@ export const Experience = () => {
       </div>
 
       <div className="w-full">
-        <h3 className="text-4xl tracking-wider font-semibold text-end">
-          Free Lance
+        <h3 className="text-4xl tracking-wider font-semibold text-start">
+          Freelance
         </h3>
       </div>
 

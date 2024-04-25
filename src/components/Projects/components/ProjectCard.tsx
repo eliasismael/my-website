@@ -18,15 +18,18 @@ const ProjectCard: React.FC<ProjectCardProps> = (props) => {
 
   return (
     <>
-      <div className="w-full min-h-80 h-full flex flex-col  bg-gray-800 rounded-xl shadow-sm lg:w-[29%] shadow-gray-700 hover:shadow-gray-300 overflow-hidden opacity-90 hover:opacity-100 duration-300 ">
+      <div
+        onClick={() => setIsModalOpen(true)}
+        className="w-full min-h-80 h-full flex flex-col cursor-pointer bg-gray-800 rounded-xl shadow-sm lg:w-[29%] shadow-gray-700 hover:shadow-gray-300 overflow-hidden opacity-90 hover:opacity-100 duration-300 "
+      >
         {/* IMAGE */}
         <div className=" w-full rounded-2xl">
-          <a href={deploy} target="_blank">
-            <img
-              src={image}
-              className="w-full h-52 object-cover rounded-t-2xl "
-            />
-          </a>
+          {/* <a href={deploy} target="_blank"> */}
+          <img
+            src={image}
+            className="w-full h-52 object-cover rounded-t-2xl "
+          />
+          {/* </a> */}
         </div>
 
         {/* ABOUT */}
@@ -62,12 +65,29 @@ const ProjectCard: React.FC<ProjectCardProps> = (props) => {
             </p>
           </div>
 
-          <button
+          {/* <button
             onClick={() => setIsModalOpen(true)}
             className="cursor-pointer px-2 py-0.5 my-2 rounded-full border border-gray-400 hover:border-gray-300 break-normal text-center bg-black/40 hover:bg-black/30 duration-300"
           >
             See details
-          </button>
+          </button> */}
+
+          <div className="w-full mt-2 mb-2 flex gap-2 ">
+            <a
+              href={code}
+              target="_blank"
+              className="w-1/2 text-center text-sm flex justify-center items-center rounded-full shadow-md shadow-black/30 bg-gray-950 hover:bg-gray-900 text-white px-4 py-2 duration-300"
+            >
+              View code
+            </a>
+            <a
+              href={deploy}
+              target="_blank"
+              className="w-1/2 text-center text-sm flex justify-center items-center rounded-full shadow-md shadow-black/30 bg-violet-800 hover:bg-violet-700  text-white px-4 py-2 duration-300"
+            >
+              View live app
+            </a>
+          </div>
         </div>
       </div>
 

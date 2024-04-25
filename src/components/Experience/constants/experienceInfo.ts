@@ -8,7 +8,8 @@ export const experienceInfo = [
     img: imgFrigate,
     company: "Frigate",
     period: "November 2023 - Present",
-    technologies: "FlutterFlow - Dart - Firebase - Figma",
+    technologies:
+      "FlutterFlow - Dart - Firebase - Figma - React Native - Java - Spring Boot",
     description:
       // "Nau Bank is a tech startup for which I implement interfaces and user experience in its different applications with Dart and Flutterflow, correct registration and user authentication with Firebase.",
 

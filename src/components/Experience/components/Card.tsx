@@ -51,9 +51,9 @@ export const Card: React.FC<CardProps> = (props) => {
         </div>
 
         <div>
-          <span className="text-xs text-gray-100 px-3 py-0.5 bg-black/60 border-violet-800 border rounded-full">
+          <div className="text-xs text-center flex itmes-center text-gray-100 px-3 py-1 bg-black/60 border-violet-800 border rounded-full w-fit">
             {technologies}
-          </span>
+          </div>
         </div>
 
         {/* <div>

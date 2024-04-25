@@ -8,7 +8,7 @@ export const Projects = () => {
       className="w-full text-white flex flex-col items-center"
     >
       <div className="w-full mb-4">
-        <h3 className="text-5xl tracking-wider font-semibold text-end">
+        <h3 className="text-5xl tracking-wider font-semibold text-start">
           Personal Projects
         </h3>
       </div>

@@ -18,10 +18,7 @@ export const ModalContent: React.FC<ModalContentProps> = (props) => {
         className={` relative lg:w-1/2 overflow-hidden  ${windowWidth < 1024 && "hidden"}`}
       >
         <a href={deploy} target="_blank">
-          <img
-            src={image}
-            className="w-full aspect-square h-full object-cover "
-          />
+          <img src={image} className="aspect-video h-full object-cover " />
         </a>
       </section>
 
@@ -64,7 +61,7 @@ export const ModalContent: React.FC<ModalContentProps> = (props) => {
         <p className={`text-md font-normal overflow-hidden`}>{info}</p>
         {/* </div> */}
 
-        <div className="w-full mt-2 mb-2 flex gap-2">
+        <div className="w-full mt-2 mb-2 flex gap-2 ">
           <a
             href={code}
             target="_blank"
