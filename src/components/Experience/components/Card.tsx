@@ -1,3 +1,5 @@
+import { FaExternalLinkAlt } from "react-icons/fa";
+
 interface CardProps {
   position: string;
   img: string;
@@ -9,21 +11,12 @@ interface CardProps {
 }
 
 export const Card: React.FC<CardProps> = (props) => {
-  const { position, img, company, period, technologies, description } = props;
+  const { position, img, company, period, technologies, description, link } =
+    props;
   return (
     <div
       className={`flex flex-col md:flex-row w-full bg-gray-700 rounded-md shadow-md shadow-black border-2 border-gray-800 duration-300 overflow-hidden`}
-      // onMouseEnter={() => setBorderColor("border-violet-500")}
-      // onMouseLeave={() => setBorderColor("border-gray-800")}
     >
-      {/* <div className="w-60 h-60 md:w-auto h- md:h-auto ">
-        <img
-          src={img}
-          alt="Company logo"
-          className="w-full h-full aspect-square object-cover rounded-tl-md rounded-bl-md"
-        />
-      </div> */}
-
       <div className="w-full md:w-60 md:h-full overflow-visible ">
         {" "}
         <img
@@ -31,7 +24,6 @@ export const Card: React.FC<CardProps> = (props) => {
           alt="Company logo"
           className="h-full w-full aspect-square object-cover rounded-tl-md rounded-bl-md"
           style={{ minWidth: "100%", minHeight: "100%" }}
-          /* Aseguramos que la imagen ocupe todo el espacio del contenedor */
         />
       </div>
 
@@ -42,7 +34,15 @@ export const Card: React.FC<CardProps> = (props) => {
           <span className="text-white text-2xl/4 text-center sm:text-start">
             {position}
           </span>
-          <span className="text-gray-300">{company}</span>
+          <span className="text-gray-300 underline underline-offset-2 cursor-pointer hover:text-white duration-300">
+            <a
+              className="inline-flex items-center gap-2"
+              href={link || ""}
+              target="_blank"
+            >
+              {company} <FaExternalLinkAlt className="w-3 h-3" />
+            </a>
+          </span>
         </div>
 
         {/* SUBTITLES */}
@@ -55,10 +55,6 @@ export const Card: React.FC<CardProps> = (props) => {
             {technologies}
           </div>
         </div>
-
-        {/* <div>
-          <span className="text-xs text-gray-300 ">www.tateti.com</span>
-        </div> */}
 
         <div className="text-ellipsis overflow-hidden w-full block whitespace-wrap p-2 font-light text-md">
           {description}
