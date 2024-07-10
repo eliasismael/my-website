@@ -1,7 +1,18 @@
 import imgBeAChampion from "../../../assets/img/experiencie/be-a-champion-logo.jfif";
 import imgFrigate from "../../../assets/img/experiencie/frigate.jpg";
+import imgPrutopia from "../../../assets/img/experiencie/prutopia_logo.jfif";
 
 export const experienceInfo = [
+  {
+    position: "Frontend Blockchain Developer",
+    img: imgPrutopia,
+    company: "Prutopia",
+    period: "July 2024 - Present",
+    link: "https://www.prutopia.io/en",
+    technologies: "Next.js - React.js - TypeScript - Web3 Auth - Wagmi - Figma",
+    description:
+      "Prutopia is a project that seeks to create a new resume and work experience management system taking advantage of blockchain technology to guarantee the decentralization and transferability of data. I work creating and implementing UI components, pages, routing, integrations with external API's along with interaction with virtual wallets and smart contracts on the blockchain.",
+  },
   {
     position: "Software Developer",
     img: imgFrigate,

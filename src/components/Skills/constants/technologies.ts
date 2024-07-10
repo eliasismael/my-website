@@ -18,6 +18,7 @@ import hardhat from "../../../assets/img/technologies_logos/hardhat.png";
 import ethers from "../../../assets/img/technologies_logos/ethers.png";
 import web3 from "../../../assets/img/technologies_logos/web3js.png";
 import walletConnect from "../../../assets/img/technologies_logos/wallet-connect-logo.png";
+import web3Auth from "../../../assets/img/technologies_logos/web3-auth.jpg";
 
 import git from "../../../assets/img/technologies_logos/git-logo.png";
 import github from "../../../assets/img/technologies_logos/github-icon.png";
@@ -141,6 +142,12 @@ export const BLOCKCHAIN_TECHNOLOGIES: Technologie[] = [
     src: walletConnect,
     alt: "Wallet connect Logo",
     color: "#0093FF",
+  },
+  {
+    name: "Web3 Auth",
+    src: web3Auth,
+    alt: "Web3 Auth Logo",
+    color: "#007CFF",
   },
 ];
 

@@ -41,8 +41,8 @@ export const Card: React.FC<CardProps> = (props) => {
             />
 
             <span
-              className="px-2 rounded-xl py-0.5 text-xs shadow-sm border border-gray-400 "
-              style={{ backgroundColor: element.color + "40" }}
+              className="px-2 rounded-xl py-0.5 text-xs  border border-gray-400 "
+              style={{ backgroundColor: element.color + "30" }}
             >
               {element.name}
             </span>
