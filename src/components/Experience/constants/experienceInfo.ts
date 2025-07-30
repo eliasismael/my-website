@@ -19,7 +19,7 @@ export const experienceInfo = [
     position: "Frontend Web3 Developer",
     img: imgPrutopia,
     company: "Prutopia",
-    period: "July 2024 - October 2024",
+    period: "July 2024 - January 2024",
     link: "https://www.prutopia.io/en",
     technologies: "Next.js - React.js - TypeScript - Web3 Auth - Wagmi - Figma",
     description:
@@ -46,7 +46,7 @@ export const experienceInfo = [
     position: "Frontend Developer",
     img: imgBeAChampion,
     company: "Beachampion.gg",
-    period: "June 2023 - November 2023",
+    period: "Aril 2023 - November 2023",
     link: "https://www.beachampion.gg",
     technologies:
       "Next.js - React - TypeScript - HTML- CSS - TailwindCSS - Figma - GIT - GitHub",
